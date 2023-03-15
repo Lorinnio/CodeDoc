@@ -139,4 +139,12 @@ html {
   html {
     font-size: 40%;
   }
+  .cel-input,
+  .przebieg-input,
+  .wnioski-input,
+  .cel-inputs,
+  .przebieg-inputs,
+  .wnioski-inputs {
+    width: 46rem;
+  }
 }
