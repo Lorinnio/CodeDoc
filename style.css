@@ -29,10 +29,38 @@ html {
   text-align: center;
   color: #3f8a7f;
 }
+.mode-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.mode1,
+.mode2 {
+  /* background-color: red;
+  padding: 1rem 2rem;
+  border-radius: 5rem; */
+  background: #2f4858;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: #b1c37b;
+}
 .question-boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.instruction {
+  display: flex;
+  justify-content: center;
+  color: #fe8a7d;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 1.5rem 2rem;
+  text-align: center;
 }
 
 .cel-input,
