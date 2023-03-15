@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/docx@7.1.0/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading-primary">SPRAWOZDANIE BOT</h1>
+    <div class="submit">
+      <button class="submit-btn" type="button" onclick="generate()">
+        GENERUJ
+      </button>
+    </div>
+    <div class="big2">
+      <div class="question-boxes">
+        <h2 class="greenn">CEL CWICZENIA</h2>
+        <textarea
+          name="cel"
+          class="cel-input"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <h2 class="greenn">PRZEBIEG CWICZENIA</h2>
+        <textarea
+          name="cel"
+          class="przebieg-input"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <h2 class="greenn">WNIOSKI</h2>
+        <textarea
+          name="wnioski"
+          class="wnioski-input"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="question-boxes">
+        <h2 class="greyy">CEL CWICZENIA (wzorowy format)</h2>
+        <textarea name="cel" class="cel-inputs" id="" cols="30" rows="10">
+Celem ćwiczenia jest poznanie i zrozumienie dziedziczenia oraz hierarchii klas w C++, a także umiejętność tworzenia klas pochodnych z wykorzystaniem dziedziczenia, dodawania nowych składowych oraz modyfikowania już istniejących w klasach bazowych. Ćwiczenie ma na celu przede wszystkim pokazanie, jak można wykorzystać dziedziczenie do efektywnego projektowania kodu, unikania powtarzającego się kodu oraz tworzenia hierarchii klas.</textarea
+        >
+        <h2 class="greyy">PRZEBIEG CWICZENIA (wzorowy format)</h2>
+        <textarea name="cel" class="przebieg-inputs" id="" cols="30" rows="10">
+Definicja klas: Zdefiniowanie klas Sprzedawca i KierownikSprzedazy z wymaganymi polami i funkcjami.
+
+Konstruktory: Utworzenie konstruktorów dla klas, które pobierają dane od użytkownika i inicjują pola klas.
+
+Metoda wirtualna: Dodanie metody wirtualnej wyswietl() w klasie Sprzedawca, która wyświetla informacje o sprzedawcy.
+
+Dziedziczenie: Klasa KierownikSprzedazy dziedziczy po klasie Sprzedawca i przesłania metodę wyswietl().
+
+Dodatkowe pola: Dodanie dodatkowych pól uprawnienia i dodatek_funkcyjny w klasie KierownikSprzedazy.
+
+Metoda oblicz_place(): Dodanie metody oblicz_place() w klasie KierownikSprzedazy, która oblicza płacę z uwzględnieniem dodatku funkcyjnego.
+
+Implementacja metod: Implementacja wszystkich metod klas w kodzie programu.
+
+Obiekty: Utworzenie obiektów klasy Sprzedawca i KierownikSprzedazy.
+
+Wywołanie metod: Wywołanie metod utworzonych obiektów w metodzie Main.</textarea
+        >
+        <h2 class="greyy">WNIOSKI (wzorowy format)</h2>
+        <textarea
+          name="wnioski"
+          class="wnioski-inputs"
+          id=""
+          cols="30"
+          rows="10"
+        >
+Dziedziczenie klas pozwala na łączenie powtarzającego się kodu z poszczególnymi klasami, co prowadzi do uzyskania krótszego i bardziej funkcjonalnego kodu.
+
+Dziedziczenie polega na tym, że jedna klasa odziedzicza coś (zmienne, metody) po drugiej. Klasę dziedziczącą nazywa się klasą pochodną, a klasę, po której klasa pochodna dziedziczy, nazywa się klasą bazową.
+
+Istnieją trzy typy dziedziczenia: publiczne, chronione i prywatne. Różnią się one dostępem do odziedziczonych składowych w klasie pochodnej.
+
+Składowe prywatne klasy bazowej są dziedziczone jako prywatne we wszystkich sposobach dziedziczenia, ale klasa pochodna nie ma do nich dostępu. Aby klasa pochodna miała dostęp do prywatnych składowych klasy bazowej, musi być zaprzyjaźniona z klasą bazową.
+      </textarea
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
