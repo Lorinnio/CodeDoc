@@ -41,8 +41,8 @@ html {
 .cel-inputs,
 .przebieg-inputs,
 .wnioski-inputs {
-  height: 200px;
-  width: 500px;
+  height: 20rem;
+  width: 50rem;
 }
 
 .big2 {
@@ -73,4 +73,42 @@ html {
 
 .greenn {
   color: #3f8a7f;
+}
+
+@media screen and (max-width: 70em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 61em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 56em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 50em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media screen and (max-width: 40em) {
+  html {
+    font-size: 45%;
+  }
+  .big2 {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .submit {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 24em) {
+  html {
+    font-size: 40%;
+  }
 }
