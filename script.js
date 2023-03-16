@@ -25,7 +25,7 @@ function generate(delimiter = "\n") {
         break: 2,
         text: el,
         size: 24,
-        font: "Arial",
+        font: "Calibri",
       });
     }),
   });
@@ -46,7 +46,7 @@ function generate(delimiter = "\n") {
                 text: "Cel Ćwiczenia:",
                 bold: true,
                 size: 32,
-                font: "Arial",
+                font: "Calibri",
               }),
 
               new docx.TextRun({
@@ -54,21 +54,21 @@ function generate(delimiter = "\n") {
                 text: `${celTxt.value}`,
                 italics: true,
                 size: 24,
-                font: "Arial",
+                font: "Calibri",
               }),
               new docx.TextRun({
                 break: 2,
                 text: "Przebieg Ćwiczenia:",
                 bold: true,
                 size: 32,
-                font: "Arial",
+                font: "Calibri",
               }),
               ...przebiegTxtt.map((el) => {
                 return new docx.TextRun({
                   break: 2,
                   text: el,
                   size: 24,
-                  font: "Arial",
+                  font: "Calibri",
                 });
               }),
 
@@ -77,7 +77,7 @@ function generate(delimiter = "\n") {
                 text: "Wnioski:",
                 bold: true,
                 size: 32,
-                font: "Arial",
+                font: "Calibri",
               }),
 
               wnioskiParagraph,
