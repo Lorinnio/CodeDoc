@@ -39,11 +39,8 @@ html {
   justify-content: center;
   gap: 2rem;
 }
-.mode1,
-.mode2 {
-  /* background-color: red;
-  padding: 1rem 2rem;
-  border-radius: 5rem; */
+.mode-n,
+.mode-nn {
   background: #2f4858;
   margin-top: 1rem;
   padding: 1rem 2rem;
@@ -78,7 +75,7 @@ html {
   width: 50rem;
 }
 
-.big2 {
+.boxes-container {
   display: flex;
   gap: 10rem;
   justify-content: center;
@@ -100,11 +97,11 @@ html {
   justify-content: center;
 }
 
-.greyy {
+.heading-grey {
   color: #555;
 }
 
-.greenn {
+.heading-green {
   color: #3f8a7f;
 }
 

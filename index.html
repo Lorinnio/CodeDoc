@@ -13,14 +13,9 @@
   </head>
   <body>
     <h1 class="heading-primary">SPRAWOZDANIE BOT</h1>
-    <!-- <div class="submit">
-      <button class="submit-btn" type="button" onclick="generate()">
-        GENERUJ
-      </button>
-    </div> -->
     <div class="mode-container">
-      <button class="mode1">GENERUJ \n</button>
-      <button class="mode2">GENERUJ \n\n</button>
+      <button class="mode-n">GENERUJ \n</button>
+      <button class="mode-nn">GENERUJ \n\n</button>
     </div>
     <div class="instruction">
       <p>
@@ -29,9 +24,9 @@
         podwójnego entera, użyj separatora "\n\n".
       </p>
     </div>
-    <div class="big2">
+    <div class="boxes-container">
       <div class="question-boxes">
-        <h2 class="greenn">CEL CWICZENIA</h2>
+        <h2 class="heading-green">CEL CWICZENIA</h2>
         <textarea
           name="cel"
           class="cel-input"
@@ -39,7 +34,7 @@
           cols="30"
           rows="10"
         ></textarea>
-        <h2 class="greenn">PRZEBIEG CWICZENIA</h2>
+        <h2 class="heading-green">PRZEBIEG CWICZENIA</h2>
         <textarea
           name="cel"
           class="przebieg-input"
@@ -47,7 +42,7 @@
           cols="30"
           rows="10"
         ></textarea>
-        <h2 class="greenn">WNIOSKI</h2>
+        <h2 class="heading-green">WNIOSKI</h2>
         <textarea
           name="wnioski"
           class="wnioski-input"
@@ -57,11 +52,11 @@
         ></textarea>
       </div>
       <div class="question-boxes">
-        <h2 class="greyy">CEL CWICZENIA (wzorowy format)</h2>
+        <h2 class="heading-grey">CEL CWICZENIA (wzorowy format)</h2>
         <textarea name="cel" class="cel-inputs" id="" cols="30" rows="10">
 Celem ćwiczenia jest poznanie i zrozumienie dziedziczenia oraz hierarchii klas w C++, a także umiejętność tworzenia klas pochodnych z wykorzystaniem dziedziczenia, dodawania nowych składowych oraz modyfikowania już istniejących w klasach bazowych. Ćwiczenie ma na celu przede wszystkim pokazanie, jak można wykorzystać dziedziczenie do efektywnego projektowania kodu, unikania powtarzającego się kodu oraz tworzenia hierarchii klas.</textarea
         >
-        <h2 class="greyy">PRZEBIEG CWICZENIA (wzorowy format \n\n)</h2>
+        <h2 class="heading-grey">PRZEBIEG CWICZENIA (wzorowy format \n\n)</h2>
         <textarea name="cel" class="przebieg-inputs" id="" cols="30" rows="10">
 Definicja klas: Zdefiniowanie klas Sprzedawca i KierownikSprzedazy z wymaganymi polami i funkcjami.
 
@@ -81,7 +76,7 @@ Obiekty: Utworzenie obiektów klasy Sprzedawca i KierownikSprzedazy.
 
 Wywołanie metod: Wywołanie metod utworzonych obiektów w metodzie Main.</textarea
         >
-        <h2 class="greyy">WNIOSKI (wzorowy format \n\n)</h2>
+        <h2 class="heading-grey">WNIOSKI (wzorowy format \n\n)</h2>
         <textarea
           name="wnioski"
           class="wnioski-inputs"

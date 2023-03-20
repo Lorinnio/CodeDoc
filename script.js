@@ -1,26 +1,27 @@
-const celTxt = document.querySelector(".cel-input");
-const wnioskiTxt = document.querySelector(".wnioski-input");
-const przebiegTxt = document.querySelector(".przebieg-input");
+const celInput = document.querySelector(".cel-input");
+const wnioskiInput = document.querySelector(".wnioski-input");
+const przebiegInput = document.querySelector(".przebieg-input");
+
 const btn = document.querySelector(".submit-btn");
 
-const mode1 = document.querySelector(".mode1");
-const mode2 = document.querySelector(".mode2");
+const modeN = document.querySelector(".mode-n");
+const modeNN = document.querySelector(".mode-nn");
 
-mode1.addEventListener("click", function () {
+modeN.addEventListener("click", function () {
   generate("\n");
 });
 
-mode2.addEventListener("click", function () {
+modeNN.addEventListener("click", function () {
   generate("\n\n");
 });
-function generate(delimiter = "\n") {
-  const wnioskiTxtt = [];
-  wnioskiTxt.value.split(delimiter).forEach((el, i) => {
-    wnioskiTxtt.push(`- ${el}`);
+const generate = function (delimiter = "\n") {
+  const wnioskiOutput = [];
+  wnioskiInput.value.split(delimiter).forEach((el, i) => {
+    wnioskiOutput.push(`- ${el}`);
   });
 
   const wnioskiParagraph = new docx.Paragraph({
-    children: wnioskiTxtt.map((el) => {
+    children: wnioskiOutput.map((el) => {
       return new docx.TextRun({
         break: 2,
         text: el,
@@ -30,9 +31,9 @@ function generate(delimiter = "\n") {
     }),
   });
 
-  const przebiegTxtt = [];
-  przebiegTxt.value.split(delimiter).forEach((el, i) => {
-    przebiegTxtt.push(`${i + 1}: ${el}`);
+  const przebiegOutput = [];
+  przebiegInput.value.split(delimiter).forEach((el, i) => {
+    przebiegOutput.push(`${i + 1}: ${el}`);
   });
 
   const doc = new docx.Document({
@@ -51,7 +52,7 @@ function generate(delimiter = "\n") {
 
               new docx.TextRun({
                 break: 2,
-                text: `${celTxt.value}`,
+                text: `${celInput.value}`,
                 italics: true,
                 size: 24,
                 font: "Calibri",
@@ -63,7 +64,7 @@ function generate(delimiter = "\n") {
                 size: 32,
                 font: "Calibri",
               }),
-              ...przebiegTxtt.map((el) => {
+              ...przebiegOutput.map((el) => {
                 return new docx.TextRun({
                   break: 2,
                   text: el,
@@ -90,6 +91,6 @@ function generate(delimiter = "\n") {
   docx.Packer.toBlob(doc).then((blob) => {
     console.log(blob);
     saveAs(blob, "sprawozdanie.docx");
-    console.log("Document created successfully");
+    console.log("Dokument utworzony pomyślnie");
   });
-}
+};
