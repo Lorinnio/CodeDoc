@@ -65,12 +65,7 @@ html {
   text-align: center;
 }
 
-.cel-input,
-.przebieg-input,
-.wnioski-input,
-.cel-inputs,
-.przebieg-inputs,
-.wnioski-inputs {
+.input-style {
   height: 20rem;
   width: 50rem;
 }
@@ -141,12 +136,7 @@ html {
   html {
     font-size: 40%;
   }
-  .cel-input,
-  .przebieg-input,
-  .wnioski-input,
-  .cel-inputs,
-  .przebieg-inputs,
-  .wnioski-inputs {
+  .input-style {
     width: 44rem;
   }
 }
