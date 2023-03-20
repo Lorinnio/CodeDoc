@@ -124,7 +124,7 @@ html {
   html {
     font-size: 45%;
   }
-  .big2 {
+  .boxes-container {
     flex-direction: column;
     gap: 4rem;
   }
