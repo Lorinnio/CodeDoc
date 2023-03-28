@@ -1,7 +1,7 @@
 # 📝 CodeDoc
 
 <h1 align="center">
-   <img src="https://ik.imagekit.io/lorinnio/https-codedoc-netlify-app.png?updatedAt=1678897278883">
+   <img src="https://ik.imagekit.io/lorinnio/https-codedoc-netlify-app.png?updatedAt=1679909520807">
 </h1>
 
 ## 📓 About
